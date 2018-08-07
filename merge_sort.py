@@ -3,7 +3,7 @@ from random import randrange
 
 def merge(left_block, right_block):
     temp = []
-    left_index, right_index = 0, 0
+    left_index = right_index = 0
     left_block_len, right_block_len = len(left_block), len(right_block)
 
     while left_index != left_block_len and right_index != right_block_len:
