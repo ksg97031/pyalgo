@@ -10,6 +10,7 @@ So if you want to use it in the real world, it's your responsibility.
 ## Sort
 - [merge_sort.py](https://github.com/ksg97031/pyalgo/blob/master/merge_sort.py)
 - [quick_sort.py](https://github.com/ksg97031/pyalgo/blob/master/quick_sort.py)
+- [insertion_sort.py](https://github.com/ksg97031/pyalgo/blob/master/insertion_sort.py)
 - [binary_insertion_sort.py](https://github.com/ksg97031/pyalgo/blob/master/binary_insertion_sort.py)
 
 ## Search
