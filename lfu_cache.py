@@ -36,7 +36,7 @@ class Node:
         self.previous.insert(node)
 
     def insert(self, node):
-        if self.next:
+        if node.next:
             self.next.previous = node
             node.next = self.next
             node.previous = self
@@ -82,31 +82,36 @@ def lfu_cache_wrapper(user_function, maxsize=32):
                 return node.result
 
             result = user_function(*args, **kwargs)
-            new_node = Node(key, result)
-            cache[key] = new_node
             if key in cache:
                 pass
             elif full:
+                new_node = Node(key, result)
+                cache[key] = new_node
+
                 while root.hit != 0:
                     root.hit -= 1
                     root = root.previous
+
                 oldkey = root.key
                 root.replace(new_node)
                 root = root.previous
                 del cache[oldkey]
             else:
-                if root is not None:
-                    root = new_node
-                else:
-                    root.insert(new_node)
+                new_node = Node(key, result)
+                cache[key] = new_node
 
-                full = len(cache) > maxsize
+                if root is not None:
+                    root.insert(new_node)
+                else:
+                    root = new_node
+
+                full = cache_len() > maxsize
             return result
 
     return wrapper
 
 
-@lfu_cache(32)
+@lfu_cache(100)
 def F(n):
     if n == 0: return 0
     elif n == 1: return 1

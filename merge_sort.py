@@ -26,7 +26,7 @@ def merge_sort(arr):
     if len(arr) > 1:
         mid = len(arr) // 2
         left_block = merge_sort(arr[:mid])
-        right_block = merge_sort(arr[mid:]) 
+        right_block = merge_sort(arr[mid:])
         return merge(left_block, right_block)
     return arr
 
