@@ -22,4 +22,5 @@ So if you want to use it in the real world, it's your responsibility.
 ## Graph
 - [bfs.py](https://github.com/ksg97031/pyalgo/blob/master/bfs.py)
 - [dfs.py](https://github.com/ksg97031/pyalgo/blob/master/dfs.py)
+- [prim.py](https://github.com/ksg97031/pyalgo/blob/master/prim.py)
 - [dijkstra.py](https://github.com/ksg97031/pyalgo/blob/master/dijkstra.py)
