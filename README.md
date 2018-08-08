@@ -20,4 +20,5 @@ So if you want to use it in the real world, it's your responsibility.
 - [binary_search_tree.py](https://github.com/ksg97031/pyalgo/blob/master/binary_search_tree.py)
 
 ## Graph
+- [dfs.py](https://github.com/ksg97031/pyalgo/blob/master/dfs.py)
 - [dijkstra.py](https://github.com/ksg97031/pyalgo/blob/master/dijkstra.py)
