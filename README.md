@@ -17,6 +17,7 @@ So if you want to use it in the real world, it's your responsibility.
 
 ## Search
 - [binary_search.py](https://github.com/ksg97031/pyalgo/blob/master/binary_search.py)
+- [binary_search_tree.py](https://github.com/ksg97031/pyalgo/blob/master/binary_search_tree.py)
 
 ## Graph
 - [dijkstra.py](https://github.com/ksg97031/pyalgo/blob/master/dijkstra.py)
